@@ -122,7 +122,6 @@ main {
   width: 250px;
   height: auto;
   z-index: 2;
-  background-color: gray;
   flex: 1 1 calc(25% - 20px);
   display: block;
   position: relative;
@@ -137,6 +136,25 @@ main {
   transition-duration: 1s;
 }
 
+@media (max-width: 600px) {
+
+
+.program-wrapper {
+  flex-direction: column;
+
+}
+
+.img-container{
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+}
+
+
+.program-wrapper {
+
+display: flex;
+}
 /* festival guests */
 
 /* Mette Bomsterberg */
@@ -246,6 +264,8 @@ main {
 .information-container {
    max-width: 1100px;   /* controls how wide the program can be */
   margin-left: 9%;      /* FORCE left alignment */
+  display: flex;
+     flex-direction: row;
   margin-right: auto;
   padding-left: 80px;
   
